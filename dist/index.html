@@ -76,6 +76,7 @@
       */
 
       window.swaggerUi.load();
+      window.swaggerUi.api.clientAuthorizations.add("basic_auth", new SwaggerClient.ApiKeyAuthorization("Authorization", "Basic " + btoa("swagger:sw@gg3r1fy"), "header"));
 
       function log() {
         if ('console' in window) {
